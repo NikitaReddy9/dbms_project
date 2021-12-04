@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.SideMenu{
+    background-image: url(/home/background.png);
+    background-position: center;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+}
+
+nav{
+    padding-top: 30px;
+}
+
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+a:hover{
+    background:rgb(8, 2, 46);
+    border-left: 5px solid #3debab;
+    padding: 15px 30px 15px 10px;
+}
+.fa{
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: inline-block;
+    width: 30px;
+    position: relative;
+    top: 2px;
+}
+
+a:active{
+    background: rgb(8, 2, 46);
+    border-left: 5px solid#3debab;
+    padding: 15px 30px 15px 10px;
+    color: #3debab;
+}
+
+h1{
+    color: white;
+    padding-top: 40px;
+    padding-left: 55px;
+    letter-spacing: 3px;
+    
+}
+
+.main{
+    margin-left: 280px;
+    padding: 15px;
+
+}
+
