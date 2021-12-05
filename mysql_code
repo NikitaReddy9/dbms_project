@@ -1,22 +1,21 @@
 
 -- create
 CREATE TABLE LOGIN (
-  uname varchar(20) PRIMARY KEY,
+  email varchar(40),
   pass varchar(15)
 );
 
 CREATE TABLE REGISTER (
-  uname varchar(20) PRIMARY KEY,
-  pass varchar(15),
   fullname varchar(30),
   email varchar(40),
+  pass varchar(15),
   phnum int,
   address varchar(50),
   IDno int
 );
 
 CREATE TABLE ACCINFO (
-  uname varchar(20) PRIMARY KEY,
+  email varchar(40),
   accno int,
   ifsc vachar(15),
   custid int,
@@ -24,7 +23,7 @@ CREATE TABLE ACCINFO (
 );
 
 CREATE TABLE CARD (
-  uname varchar(20) PRIMARY KEY,
+  email varchar(40),
   cardno int(16),
   expdate date,
   cvv int(3),
@@ -32,18 +31,18 @@ CREATE TABLE CARD (
 );
 
 CREATE TABLE TRANSACTIONS (
-  uname varchar(20) PRIMARY KEY,
+  email varchar(40),
   transdate date,
   transamt int,
   accno int
 );
 
 -- insert
-INSERT INTO REGISTER VALUES ('rohanrairao', '123', 'Rohan Rairao', 'rairao.rohan@gmail.com', '9632858394', 'Gachibowli', '64284394');
-INSERT INTO REGISTER VALUES ('nikitareddy', '456', 'Nikita Reddy', 'nikita.reddy@gmail.com', '8492847183', 'Kondapur', '84728493');
-INSERT INTO REGISTER VALUES ('ronitpatil', '789', 'Ronit Patil', 'ronit.patil@gmail.com', '8592743849', 'Kukatpally', '38384928');
+INSERT INTO REGISTER VALUES ( 'Rohan Rairao', 'rairao.rohan@gmail.com', '123', '9632858394', 'Gachibowli', '64284394');
+INSERT INTO REGISTER VALUES ( 'Nikita Reddy', 'nikita.reddy@gmail.com', '456', '8492847183', 'Kondapur', '84728493');
+INSERT INTO REGISTER VALUES ( 'Ronit Patil', 'ronit.patil@gmail.com', '789', '8592743849', 'Kukatpally', '38384928');
 
-INSERT INTO LOGIN(uname, pass) SELECT uname, pass FROM REGISTER;
+INSERT INTO LOGIN(email, pass) SELECT email, pass FROM REGISTER;
 
 INSERT INTO ACCINFO VALUES (1257398, 'HDFC0000723', 56725, 'Savings');
 INSERT INTO ACCINFO VALUES (3759283, 'HDFC0000762', 72836, 'Checking');
