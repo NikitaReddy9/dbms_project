@@ -1,0 +1,42 @@
+@import "style_global.css";
+
+ul {
+    list-style-type: none;
+    margin-left: 280px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .nav_links {
+    float: left;
+    margin-left: 20px;
+    padding-left: 120px;
+    width: fit-content;
+
+  }
+  
+  .nav_links a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+  }
+  
+  
+  .nav_links a:hover {
+    background-color: #111;
+    border-left: 5px solid #3debab;
+  }
+
+  .nav_links a:active{
+    background-color: #3debab;
+    
+  }
+  
+  
+
+

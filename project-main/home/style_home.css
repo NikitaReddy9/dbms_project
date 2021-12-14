@@ -1,0 +1,15 @@
+@import "style_global.css";
+
+.signout{
+    background-color:#333;
+    margin-left: 280px;
+    padding: 24.25px;
+    max-height:15px;
+}
+
+.links{
+    color: white;
+    position: fixed; top: -4px; right: 40px;
+    text-align: center;
+
+}
